@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { frames, audios } from './arrays';
 import './styles.css';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
+import toast, { Toaster } from 'react-hot-toast';
 
 export const VideoSelector = () => {
   const [audioList, setAudioList] = useState([]);
@@ -9,8 +10,11 @@ export const VideoSelector = () => {
   const [currentAudioIndex, setCurrentAudioIndex] = useState(0);
   const audioRef = useRef(new Audio());
 
+  const notify = () => toast('Audio agregado a la lista');
+
   const handleAddToQueue = (index) => {
     setAudioList((prev) => [...prev, index]);
+    notify()
   };
 
   const playAudioQueue = () => {
@@ -39,8 +43,8 @@ export const VideoSelector = () => {
   return (
     <div>
       <div>
-        <h1 style={{ color: 'white' }}>Un cuerpo expuesto</h1>
-        <h3 style={{ color: 'white' }}>Selecciona un sonido</h3>
+        <h1 style={{ color: 'white', fontFamily:'sans-serif'}}>Un cuerpo expuesto</h1>
+        <h3 style={{ color: 'white', fontFamily:'sans-serif' }}>Selecciona un sonido</h3>
       </div>
       <div className="video-grid">
         {frames.map((frame, index) => (
@@ -55,10 +59,10 @@ export const VideoSelector = () => {
               </div>
               ) : (
                 <PlayCircleOutlineIcon fontSize="large" className="icon-overlay" /> )} 
-
-            {/* */}
-
-
+                <Toaster
+                  position="bottom-center"
+                  reverseOrder={false}
+                />
             </div>
           </div>
         ))}

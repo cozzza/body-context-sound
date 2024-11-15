@@ -5,7 +5,7 @@ import tabaco from './frames/tabaco.png';
 import makeup from './frames/makeup.png';
 import comoPosar from './frames/comoPosar.png';
 import guitarra from './frames/guitarra.png';
-import saltar from './frames/saltar.jpeg';
+import saltar from './frames/saltar.png';
 
 import abdominales_1 from './AUDIOS/abdominales_1.mp3';
 import mandibula1 from './AUDIOS/mandibula1.mp3';

@@ -2,12 +2,9 @@ body {
 background-color: black;
 }
 
-/* todo: hacer que todas las img tengan el mismo tamanio  
-*/
-
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
   padding: 16px;
   position: relative;
@@ -85,3 +82,23 @@ background-color: black;
     transform: scaleY(1);
   }
 }
+
+.progress-bar {
+  background-color: rgb(255, 255, 255);
+  width: 97%;
+  height: 4px;
+  left: 1.5%;
+  position: absolute;
+  top: 85%;
+}
+
+
+/* 
+@keyframes progress-bar-animation {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+} */
