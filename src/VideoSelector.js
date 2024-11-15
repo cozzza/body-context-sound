@@ -3,6 +3,7 @@ import { frames, audios } from './arrays';
 import './styles.css';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import toast, { Toaster } from 'react-hot-toast';
+import { Height } from '@mui/icons-material';
 
 export const VideoSelector = () => {
   const [audioList, setAudioList] = useState([]);
