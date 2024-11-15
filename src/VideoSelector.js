@@ -60,6 +60,7 @@ export const VideoSelector = () => {
               ) : (
                 <PlayCircleOutlineIcon fontSize="large" className="icon-overlay" /> )} 
                 <Toaster
+                  toastOptions={{ style: {fontFamily: 'sans-serif'} }}
                   position="bottom-center"
                   reverseOrder={false}
                 />
