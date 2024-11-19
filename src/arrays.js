@@ -1,33 +1,3 @@
-/* export const frames = [
-  abdominales,
-  mandibula,
-  pelota,
-  tabaco,
-  makeup,
-  comoPosar,
-  saltar_2,
-  aplaudir_1
-];
-
-export const audios = {
-  abdominales_1,
-  abdominales_2,
-  mandibula1,
-  mandibula2,
-  jueguitos,
-  jueguitos2,
-  cigarrillo,
-  cigarrillo2,
-  emiliamakeup_1,
-  emiliamakeup_2,
-  como_posar1,
-  como_posar2,
-  saltar_cuerda,
-  saltar_cuerda2,
-  aplaudir,
-  aplaudir2
-} */
-
 import abdominales from './frames/abdominales.png';
 import mandibula from './frames/mandibula.png';
 import pelota from './frames/pelota.png';
@@ -48,7 +18,7 @@ import saltar2 from './AUDIOS/saltar2.mp3';
 import makeup1 from './AUDIOS/makeup1.mp3';
 import makeup2 from './AUDIOS/makeup2.mp3';
 import cigarrillo1 from './AUDIOS/cigarrillo1.mp3';
-//import cigarrillo2 from './AUDIOS/cigarrillo2.mp3';
+import cigarrillo2 from './AUDIOS/cigarrillo2.mp3';
 import posar1 from './AUDIOS/posar1.mp3';
 import posar2 from './AUDIOS/posar2.mp3';
 import aplaudir1 from './AUDIOS/aplaudir1.mp3';
@@ -57,7 +27,7 @@ import aplaudir2 from './AUDIOS/aplaudir2.mp3';
 export const frames = [
   { id: 'abdominales', image: abdominales, audios: [abdominales1, abdominales2] },
   { id: 'mandibula', image: mandibula, audios: [mandibula1, mandibula2] },
-  { id: 'tabaco', image: tabaco, audios: [cigarrillo1] },
+  { id: 'tabaco', image: tabaco, audios: [cigarrillo1, cigarrillo2] },
   { id: 'makeup', image: makeup, audios: [makeup1, makeup2] },
   { id: 'comoPosar', image: comoPosar, audios: [posar1, posar2] },
   { id: 'saltar', image: saltar_2, audios: [saltar1, saltar2] },
